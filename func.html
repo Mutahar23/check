@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<script>
+//Define a function name multiple that takes two number as parameters return product
+function multiple(x,y) {
+  var a = x*y;
+  return a;
+}
+var b=multiple(8,8);
+document.write(b);
+//write  a function called #greeting that take name  as parameters return stringthat "hello"{name};
+function greeting(name){
+ var a= `hello ${name}`
+ return a;
+}
+var b= greeting("Mutahar");
+document.write(b);
+//Create an arrow function that takes an array of number return sum of array
+var ary =[30,50,100];
+    var sum= (...ary) =>{
+  sum=0;
+  for(var key in ary){
+    sum +=ary[key];
+  }
+  document.write(sum);
+ }
+ sum(...ary);
+
+ //Define a function called #calculateBMI
+ function calculateBMI(weight,height){
+  var a= weight / (height * height);
+   return a;
+ }
+ var b=calculateBMI(78,1.69);
+ document.write(b);
+
+ //write an arrow function that takes a string as a parameter return length that strings
+ var len = (string) =>{
+ var a= string.length;
+ return a;
+ }
+ var b= len("My name is sahil and i am 23 years old ");
+ document.write(b);
+
+//Define function reversestring ..
+function reverseString(str) {
+  if (str === "")
+    return "";
+  else
+    return reverseString(str.substr(1)) + str.charAt(0);
+}
+ var a=reverseString("hello");
+ document.write(a);
+
+//write an arrow function that takes an object ...
+var  object=() =>{
+    var obj ={
+      first : "mutahar",
+      last : "muzammal",
+    }
+         document.write(`Hello ${obj.first} ${obj.last}`)
+   }
+ object();
+
+ // write an arrow function that takes  array returns a new array all string capitalization used map
+ 
+ var a = ['okara', 'fasi',  'lhr'];
+function capitalize(a) {
+return a.map((w) => {
+  var capitalizedFirst = w.charAt(0).toUpperCase();
+  var rest = w.slice(1).toLowerCase();
+  return capitalizedFirst + rest;
+});
+}
+document.write(capitalize(a));
+</script>
+    </head>
+    <body>
+
+    </body>
+</html>
