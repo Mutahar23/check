@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>odoo website</title>
+    <title>checking website</title>
     <style>
         body {
             margin: 0%;
